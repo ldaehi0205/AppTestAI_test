@@ -7,6 +7,7 @@ import EmptyPanel from "./../ui/emptyPanel";
 
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
+  // const [selectArr, setSelectArr] = useState(["Divice", "Locator"]);
 
   const handleProject = () => {
     setSelectProject(!selectProject);
@@ -16,9 +17,20 @@ function Main() {
     <MainPage>
       <Titlebar />
       <main className="mainPanels">
-        <Aside handleProject={handleProject} />
+        <Aside
+          handleProject={handleProject}
+          selectProject={selectProject}
+          asideName="left"
+          rotateText="-90"
+        />
         {selectProject && <Project />}
         <EmptyPanel />
+        <Aside
+          handleProject={handleProject}
+          asideName="right"
+          rotateText="90"
+          // selectNumber="2"
+        />
       </main>
     </MainPage>
   );
