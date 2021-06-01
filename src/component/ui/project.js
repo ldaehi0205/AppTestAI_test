@@ -4,10 +4,10 @@ import Panel from "./panel";
 import Toolbar from "./toolbar";
 import Spliter from "./spliter";
 
-const project = () => {
+const project = props => {
   return (
     <Project>
-      <Toolbar />
+      <Toolbar handleProject={props.handleProject} />
       <Panel title="Project Panel" />
       <Spliter />
     </Project>

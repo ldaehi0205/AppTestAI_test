@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-function SpliterLeft() {
-  return <SpliterLeftUi></SpliterLeftUi>;
+function SpliterLeft(props) {
+  return (
+    <SpliterLeftUi
+      onDrag={props.handleRelease}
+      draggable="true"
+    ></SpliterLeftUi>
+  );
 }
 
 export default SpliterLeft;
@@ -12,8 +17,9 @@ const SpliterLeftUi = styled.div`
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 2%;
+  width: 5%;
   height: 100%;
   background: #3c3f41;
   z-index: 2;
+  cursor: move;
 `;

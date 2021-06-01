@@ -3,11 +3,15 @@ import styled from "styled-components";
 import Minimize from "./minimize.png";
 import Shape from "./Shape.png";
 
-function toolbar() {
+function toolbar(props) {
   return (
     <Toolbar>
       <img src={Shape} alt="Shape" />
-      <img src={Minimize} alt="Minimize" />
+      <img
+        src={Minimize}
+        alt="Minimize"
+        onClick={() => props.handleProject()}
+      />
     </Toolbar>
   );
 }

@@ -5,6 +5,7 @@ import Titlebar from "./../ui/titlebar";
 import Project from "./../ui/project";
 import EmptyPanel from "./../ui/emptyPanel";
 import DevicePanel from "./../ui/devicePanel";
+import LocatorPanel from "./../ui/locatorPanel";
 
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
@@ -26,7 +27,6 @@ function Main() {
   useEffect(() => {
     setTapNav([true, ...navArray]);
   }, []);
-
   return (
     <MainPage>
       <Titlebar />
@@ -38,9 +38,10 @@ function Main() {
           asideName="left"
           rotateText="-90"
         />
-        {selectProject && <Project />}
+        {selectProject && <Project handleProject={handleProject} />}
         <EmptyPanel />
         {tapNav[0] && <DevicePanel tapNav={tapNav[0]} />}
+        {tapNav[1] && <LocatorPanel tapNav={tapNav[1]} />}
         <Aside
           CREATE_NAV_RIGHTARRAY={CREATE_NAV_RIGHTARRAY}
           tapNav={tapNav}
@@ -66,7 +67,7 @@ const MainPage = styled.div`
 const CREATE_NAV_RIGHTARRAY = [
   {
     id: 0,
-    content: "Divice",
+    content: "Device",
   },
   {
     id: 1,

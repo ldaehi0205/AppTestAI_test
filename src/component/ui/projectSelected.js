@@ -2,14 +2,11 @@ import React from "react";
 import styled from "styled-components";
 
 function projectSelected(props) {
-  console.log(props.handletapNav);
   return (
     <ProjectSelected
       onClick={props.handleProject}
       rotateText={props.rotateText}
       selectProject={props.selectProject}
-      onClick={() => props.handleProject?.()}
-      onClick={() => props.handletapNav?.(props.id)}
     >
       <div className="asd">{props.asideName}</div>
     </ProjectSelected>
