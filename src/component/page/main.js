@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Aside from "../ui/aside";
 import Titlebar from "./../ui/titlebar";
@@ -8,11 +8,24 @@ import DevicePanel from "./../ui/devicePanel";
 
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
-  // const rightNavArray = Array
+  const [selectDevice, setselectDevice] = useState(true);
+  const [selectLocator, setselectLocator] = useState(true);
+  const [tapNav, setTapNav] = useState([]);
+  const navArray = Array(CREATE_NAV_RIGHTARRAY.length - 1).fill(false);
 
   const handleProject = () => {
     setSelectProject(!selectProject);
   };
+
+  const handletapNav = index => {
+    const newArray = Array(CREATE_NAV_RIGHTARRAY.length).fill(false);
+    newArray[index] = true;
+    setTapNav(newArray);
+  };
+
+  useEffect(() => {
+    setTapNav([true, ...navArray]);
+  }, []);
 
   return (
     <MainPage>
@@ -20,17 +33,20 @@ function Main() {
       <main className="mainPanels">
         <Aside
           handleProject={handleProject}
+          CREATE_NAV_LEFTARRAY={CREATE_NAV_LEFTARRAY}
           selectProject={selectProject}
           asideName="left"
           rotateText="-90"
         />
         {selectProject && <Project />}
         <EmptyPanel />
-        {selectProject && <DevicePanel />}
+        {tapNav[0] && <DevicePanel tapNav={tapNav[0]} />}
         <Aside
-          handleProject={handleProject}
+          CREATE_NAV_RIGHTARRAY={CREATE_NAV_RIGHTARRAY}
+          tapNav={tapNav}
           asideName="right"
           rotateText="90"
+          handletapNav={handletapNav}
         />
       </main>
     </MainPage>
@@ -47,3 +63,20 @@ const MainPage = styled.div`
     flex-wrap: nowrap;
   }
 `;
+const CREATE_NAV_RIGHTARRAY = [
+  {
+    id: 0,
+    content: "Divice",
+  },
+  {
+    id: 1,
+    content: "Locator",
+  },
+];
+
+const CREATE_NAV_LEFTARRAY = [
+  {
+    id: 0,
+    content: "Project",
+  },
+];

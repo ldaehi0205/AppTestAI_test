@@ -1,24 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import ProjectSelected from "./projectSelected";
+import RightSelected from "./rightSelected";
 
-const slider = props => {
+const Slider = props => {
   return (
     <Aside>
       {props.asideName === "right" &&
-        CREATE_NAV_RIGHTARRAY.map(e => {
+        props.CREATE_NAV_RIGHTARRAY.map(e => {
           return (
-            <ProjectSelected
+            <RightSelected
               key={e.id}
-              // handleProject={props.handleProject}
+              id={e.id}
+              tapNav={props.tapNav[e.id]}
               asideName={e.content}
               rotateText={props.rotateText}
-              // selectProject={props.selectProject}
+              handletapNav={props.handletapNav}
             />
           );
         })}
       {props.asideName === "left" &&
-        CREATE_NAV_LEFTARRAY.map(e => {
+        props.CREATE_NAV_LEFTARRAY.map(e => {
           return (
             <ProjectSelected
               key={e.id}
@@ -33,7 +35,7 @@ const slider = props => {
   );
 };
 
-export default slider;
+export default Slider;
 
 const Aside = styled.aside`
   position: relative;
@@ -45,21 +47,3 @@ const Aside = styled.aside`
   height: 96vh;
   background: #3c3f41;
 `;
-
-const CREATE_NAV_RIGHTARRAY = [
-  {
-    id: 0,
-    content: "Divice",
-  },
-  {
-    id: 1,
-    content: "Locator",
-  },
-];
-
-const CREATE_NAV_LEFTARRAY = [
-  {
-    id: 0,
-    content: "Project",
-  },
-];

@@ -1,24 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 
-function projectSelected(props) {
-  console.log(props.handletapNav);
+function RightSelected(props) {
   return (
-    <ProjectSelected
+    <RightSelectedbar
       onClick={props.handleProject}
       rotateText={props.rotateText}
       selectProject={props.selectProject}
-      onClick={() => props.handleProject?.()}
+      tapNav={props.tapNav}
       onClick={() => props.handletapNav?.(props.id)}
     >
       <div className="asd">{props.asideName}</div>
-    </ProjectSelected>
+    </RightSelectedbar>
   );
 }
 
-export default projectSelected;
+export default RightSelected;
 
-const ProjectSelected = styled.div`
+const RightSelectedbar = styled.div`
   position: relative;
   left: ${props => Number(props.rotateText) > 0 && "24px"};
   top: ${props => Number(props.rotateText) < 0 && "100px"};
@@ -29,7 +28,7 @@ const ProjectSelected = styled.div`
   transform: ${props =>
     Number(props.rotateText) > 0 ? "rotate(90deg)" : "rotate(-90deg)"};
   color: rgb(255, 255, 255);
-  background: ${props => (props?.selectProject ? "#2b2b2b" : "3c3f41")};
+  background: ${props => (props.tapNav ? "#2b2b2b" : "3c3f41")};
 
   font-size: 14px;
   cursor: pointer;
