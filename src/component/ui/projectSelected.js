@@ -28,7 +28,6 @@ const ProjectSelected = styled.div`
   color: rgb(255, 255, 255);
   background: ${props => (props.selectProject ? "#2b2b2b" : "3c3f41")};
   font-size: 14px;
-  border: 1px solid red;
   cursor: pointer;
 
   .asd {

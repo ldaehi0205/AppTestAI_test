@@ -10,10 +10,10 @@ const slider = props => {
           return (
             <ProjectSelected
               key={e.id}
-              handleProject={props.handleProject}
+              // handleProject={props.handleProject}
               asideName={e.content}
               rotateText={props.rotateText}
-              selectProject={props.selectProject}
+              // selectProject={props.selectProject}
             />
           );
         })}

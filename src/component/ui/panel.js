@@ -12,7 +12,7 @@ const Panel = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 98%;
+  width: 100%;
   height: 97%;
   background: #2b2b2b;
   color: white;

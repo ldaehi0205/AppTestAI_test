@@ -4,10 +4,11 @@ import Aside from "../ui/aside";
 import Titlebar from "./../ui/titlebar";
 import Project from "./../ui/project";
 import EmptyPanel from "./../ui/emptyPanel";
+import DevicePanel from "./../ui/devicePanel";
 
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
-  // const [selectArr, setSelectArr] = useState(["Divice", "Locator"]);
+  // const rightNavArray = Array
 
   const handleProject = () => {
     setSelectProject(!selectProject);
@@ -25,11 +26,11 @@ function Main() {
         />
         {selectProject && <Project />}
         <EmptyPanel />
+        {selectProject && <DevicePanel />}
         <Aside
           handleProject={handleProject}
           asideName="right"
           rotateText="90"
-          // selectNumber="2"
         />
       </main>
     </MainPage>
