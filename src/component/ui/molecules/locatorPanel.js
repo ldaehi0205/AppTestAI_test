@@ -6,9 +6,10 @@ import SpliterLeft from "../atoms/spliterLeft";
 
 const LocatorPanel = () => {
   let locator = useRef();
-
+  var img = new Image();
+  img.src = "bg.png";
   const handleRelease = e => {
-    e.preventDefault();
+    // e.preventDefault();
     locator.current.style.width = `${
       (document.body.offsetWidth -
         e.clientX +
@@ -16,45 +17,54 @@ const LocatorPanel = () => {
           locator.current.style.width.split("")[0] +
             locator.current.style.width.split("")[1]
         )) /
-      7.5
+        7.5 -
+      15
     }vw`;
+    console.log(
+      // document.body.offsetWidth -
+      e.clientX
+      // Number(
+      //   locator.current.style.width.split("")[0] +
+      //     locator.current.style.width.split("")[1]
+      // )
+    );
   };
 
   const dragEnd = e => {
-    e.preventDefault();
+    // e.preventDefault();
     console.log("end");
-    setTimeout(function () {
-      locator.current.style.width = `${
-        (document.body.offsetWidth -
-          e.clientX +
-          Number(
-            locator.current.style.width.split("")[0] +
-              locator.current.style.width.split("")[1]
-          )) /
-        7.5
-      }vw`;
-      locator.current.style.display = "block";
-    }, 0);
-  };
-  // console.log(locator.current?.style.width);
-
-  const dragStart = e => {
-    console.log("start", locator.current.style.width);
-    console.log(
-      document.body.offsetWidth,
-      e.clientX,
-      Number(
-        locator.current.style.width.split("")[0] +
-          locator.current.style.width.split("")[1]
-      ),
+    locator.current.style.width = `${
       (document.body.offsetWidth -
         e.clientX +
         Number(
           locator.current.style.width.split("")[0] +
             locator.current.style.width.split("")[1]
         )) /
-        7.5
-    );
+        7.5 -
+      15
+    }vw`;
+    locator.current.style.display = "block";
+  };
+
+  const dragStart = e => {
+    // console.log("start", locator.current.style.width);
+    // console.log(
+    //   document.body.offsetWidth,
+    //   e.clientX,
+    //   Number(
+    //     locator.current.style.width.split("")[0] +
+    //       locator.current.style.width.split("")[1]
+    //   ),
+    //   (document.body.offsetWidth -
+    //     e.clientX +
+    //     Number(
+    //       locator.current.style.width.split("")[0] +
+    //         locator.current.style.width.split("")[1]
+    //     )) /
+    //     7.5 -
+    //     8
+    // );
+    e.dataTransfer.setDragImage(img, 0, 0);
   };
 
   return (
@@ -74,6 +84,5 @@ export default LocatorPanel;
 
 const Locator = styled.div`
   position: relative;
-  /* width: 30vw; */
   height: 96vh;
 `;

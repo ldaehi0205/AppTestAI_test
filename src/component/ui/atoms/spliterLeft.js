@@ -15,7 +15,6 @@ function SpliterLeft(props) {
 export default SpliterLeft;
 
 const SpliterLeftUi = styled.div`
-  display: inline;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -24,4 +23,5 @@ const SpliterLeftUi = styled.div`
   background: #3c3f41;
   z-index: 2;
   cursor: move;
+  user-select: auto;
 `;
