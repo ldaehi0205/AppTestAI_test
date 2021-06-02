@@ -6,8 +6,8 @@ function SpliterLeft(props) {
     <SpliterLeftUi
       onDrag={props.handleRelease}
       onDragEnd={props.dragEnd}
-      draggable="true"
       onDragStart={props.dragStart}
+      draggable="true"
     ></SpliterLeftUi>
   );
 }

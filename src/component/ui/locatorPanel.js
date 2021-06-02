@@ -6,29 +6,59 @@ import Toolbar from "./toolbar";
 import SpliterLeft from "./spliterLeft";
 
 const LocatorPanel = () => {
-  let xx;
   let locator = useRef();
 
   const handleRelease = e => {
     e.preventDefault();
-    console.log(e.clientX / 100);
+    locator.current.style.width = `${
+      (document.body.offsetWidth -
+        e.clientX +
+        Number(
+          locator.current.style.width.split("")[0] +
+            locator.current.style.width.split("")[1]
+        )) /
+      7.5
+    }vw`;
   };
 
   const dragEnd = e => {
     e.preventDefault();
+    console.log("end");
     setTimeout(function () {
-      locator.current.style.width = `${e.clientX / 10 + 30}vw`;
+      locator.current.style.width = `${
+        (document.body.offsetWidth -
+          e.clientX +
+          Number(
+            locator.current.style.width.split("")[0] +
+              locator.current.style.width.split("")[1]
+          )) /
+        7.5
+      }vw`;
       locator.current.style.display = "block";
-      // locator.current = null;
     }, 0);
   };
   // console.log(locator.current?.style.width);
 
-  const dragStart = () => {
-    console.log("start");
-    setTimeout(function () {
-      locator.current.style.display = "none";
-    }, 0);
+  const dragStart = e => {
+    console.log("start", locator.current.style.width);
+    // setTimeout(function () {
+    // locator.current.style.display = "none";
+    // }, 0);
+    console.log(
+      document.body.offsetWidth,
+      e.clientX,
+      Number(
+        locator.current.style.width.split("")[0] +
+          locator.current.style.width.split("")[1]
+      ),
+      (document.body.offsetWidth -
+        e.clientX +
+        Number(
+          locator.current.style.width.split("")[0] +
+            locator.current.style.width.split("")[1]
+        )) /
+        7.5
+    );
   };
 
   return (
@@ -37,7 +67,6 @@ const LocatorPanel = () => {
         handleRelease={handleRelease}
         dragEnd={dragEnd}
         dragStart={dragStart}
-        // dragOver={dragOver}
       />
       <Toolbar />
       <Panel title="Locator Panel" />
