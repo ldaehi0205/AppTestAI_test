@@ -10,15 +10,15 @@ React, Hook, styled-Component
 
 프로젝트 구조는 다음과 같습니다.
 
-**ui/atoms/**
+**src/ui/atoms/**
 
 - 가장 작은 단위의 재사용성이 높은 컴포넌트입니다.
 
-**ui/molecules/**
+**src/ui/molecules/**
 
 - atom을 조합한 컴포넌트입니다.
 
-**public/index.js/**
+**src/public/index.js/**
 
 - 메인페이지로 화면에 보여지는 레이아웃입니다.
 
