@@ -34,23 +34,23 @@ React, Hook, styled-Component
 │   │   │   └── main.js
 │   │   ├── templates
 │   │   └── ui
-│   │       ├── atoms
-│   │   		│   ├── Shape.png
-│   │   		│   ├── appTestIcon.png
-│   │   		│   ├── emptyPanel.js
-│   │   		│   ├── minimize.png
-│   │   		│   ├── panel.js
-│   │   		│   ├── projectSelected.js
-│   │   		│   ├── rightSelected.js
-│   │   		│   ├── spliter.js
-│   │   		│   ├── spliterLeft.js
-│   │   		│   ├── titlebar.js
-│   │   		│   └── toolbar.js
-│   │   		└── molecules
-│   │       		├── aside.js
-│   │       		├── devicePanel.js
-│   │       		├── locatorPanel.js
-│   │       		└── project.js
+│   │   ├── atoms
+│   │   │   ├── Shape.png
+│   │   │   ├── appTestIcon.png
+│   │   │   ├── emptyPanel.js
+│   │   │   ├── minimize.png
+│   │   │   ├── panel.js
+│   │   │   ├── projectSelected.js
+│   │   │   ├── rightSelected.js
+│   │   │   ├── spliter.js
+│   │   │   ├── spliterLeft.js
+│   │   │   ├── titlebar.js
+│   │   │   └── toolbar.js
+│   │   └── molecules
+│   │       ├── aside.js
+│   │       ├── devicePanel.js
+│   │       ├── locatorPanel.js
+│   │       └── project.js
 │   └── index.js
 └── yarn.lock
 ```
