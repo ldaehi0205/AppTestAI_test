@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Panel from "./panel";
-import Toolbar from "./toolbar";
-import Spliter from "./spliter";
+import Panel from "../atoms/panel";
+import Toolbar from "../atoms/toolbar";
+import Spliter from "../atoms/spliter";
 
 const project = props => {
   return (

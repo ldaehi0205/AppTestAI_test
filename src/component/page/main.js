@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Aside from "../ui/aside";
-import Titlebar from "./../ui/titlebar";
-import Project from "./../ui/project";
-import EmptyPanel from "./../ui/emptyPanel";
-import DevicePanel from "./../ui/devicePanel";
-import LocatorPanel from "./../ui/locatorPanel";
+import Aside from "../ui/molecules/aside";
+import Titlebar from "../ui/atoms/titlebar";
+import Project from "../ui/molecules/project";
+import EmptyPanel from "../ui/atoms/emptyPanel";
+import DevicePanel from "../ui/molecules/devicePanel";
+import LocatorPanel from "../ui/molecules/locatorPanel";
 
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
-  const [selectDevice, setselectDevice] = useState(true);
-  const [selectLocator, setselectLocator] = useState(true);
   const [tapNav, setTapNav] = useState([]);
   const navArray = Array(CREATE_NAV_RIGHTARRAY.length - 1).fill(false);
 

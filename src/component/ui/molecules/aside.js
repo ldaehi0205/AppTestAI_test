@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectSelected from "./projectSelected";
-import RightSelected from "./rightSelected";
+import ProjectSelected from "../atoms/projectSelected";
+import RightSelected from "../atoms/rightSelected";
 
 const Slider = props => {
   return (

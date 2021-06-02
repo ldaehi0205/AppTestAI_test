@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 function spliter() {
-  return <Spliter></Spliter>;
+  return <Spliter />;
 }
 
 export default spliter;

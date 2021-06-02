@@ -8,7 +8,7 @@ function projectSelected(props) {
       rotateText={props.rotateText}
       selectProject={props.selectProject}
     >
-      <div className="asd">{props.asideName}</div>
+      <div className="name">{props.asideName}</div>
     </ProjectSelected>
   );
 }
@@ -27,11 +27,10 @@ const ProjectSelected = styled.div`
     Number(props.rotateText) > 0 ? "rotate(90deg)" : "rotate(-90deg)"};
   color: rgb(255, 255, 255);
   background: ${props => (props?.selectProject ? "#2b2b2b" : "3c3f41")};
-
   font-size: 14px;
   cursor: pointer;
 
-  .asd {
+  .name {
     margin: 4px 30px;
   }
 `;

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Panel from "./panel";
-import Toolbar from "./toolbar";
-import SpliterLeft from "./spliterLeft";
+import Panel from "../atoms/panel";
+import Toolbar from "../atoms/toolbar";
+import SpliterLeft from "../atoms/spliterLeft";
 
 const DevicePanel = () => {
   return (

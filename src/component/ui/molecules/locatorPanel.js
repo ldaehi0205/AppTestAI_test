@@ -1,9 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
-import DragResizeContainer from "react-drag-resize";
-import Panel from "./panel";
-import Toolbar from "./toolbar";
-import SpliterLeft from "./spliterLeft";
+import Panel from "../atoms/panel";
+import Toolbar from "../atoms/toolbar";
+import SpliterLeft from "../atoms/spliterLeft";
 
 const LocatorPanel = () => {
   let locator = useRef();

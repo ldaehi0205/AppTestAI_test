@@ -12,7 +12,6 @@ const EmptyPanel = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  /* width: calc(100% - 25px); */
   width: 100%;
   height: 96vh;
   background: #2b2b2b;

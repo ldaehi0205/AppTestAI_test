@@ -10,7 +10,7 @@ function RightSelected(props) {
       tapNav={props.tapNav}
       onClick={() => props.handletapNav?.(props.id)}
     >
-      <div className="asd">{props.asideName}</div>
+      <div className="name">{props.asideName}</div>
     </RightSelectedbar>
   );
 }
@@ -33,7 +33,7 @@ const RightSelectedbar = styled.div`
   font-size: 14px;
   cursor: pointer;
 
-  .asd {
+  .name {
     margin: 4px 30px;
   }
 `;
