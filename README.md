@@ -16,33 +16,4 @@ build를 실행합니다.
 
 # 폴더 구조
 
-├── package-lock.json
-├── package.json
-├── public
-│   ├── data
-│   └── index.html
-├── src
-│   ├── component
-│   │   ├── page
-│   │   │   └── main.js
-│   │   ├── templates
-│   │   └── ui
-│   │   ├── atoms
-│   │   │   ├── Shape.png
-│   │   │   ├── appTestIcon.png
-│   │   │   ├── emptyPanel.js
-│   │   │   ├── minimize.png
-│   │   │   ├── panel.js
-│   │   │   ├── projectSelected.js
-│   │   │   ├── rightSelected.js
-│   │   │   ├── spliter.js
-│   │   │   ├── spliterLeft.js
-│   │   │   ├── titlebar.js
-│   │   │   └── toolbar.js
-│   │   └── molecules
-│   │   ├── aside.js
-│   │   ├── devicePanel.js
-│   │   ├── locatorPanel.js
-│   │   └── project.js
-│   └── index.js
-└── yarn.lock
+`├── package-lock.json ├── package.json ├── public │ ├── data │ └── index.html ├── src │ ├── component │ │ ├── page │ │ │ └── main.js │ │ ├── templates │ │ └── ui │ │ ├── atoms │ │ │ ├── Shape.png │ │ │ ├── appTestIcon.png │ │ │ ├── emptyPanel.js │ │ │ ├── minimize.png │ │ │ ├── panel.js │ │ │ ├── projectSelected.js │ │ │ ├── rightSelected.js │ │ │ ├── spliter.js │ │ │ ├── spliterLeft.js │ │ │ ├── titlebar.js │ │ │ └── toolbar.js │ │ └── molecules │ │ ├── aside.js │ │ ├── devicePanel.js │ │ ├── locatorPanel.js │ │ └── project.js │ └── index.js └── yarn.lock`
