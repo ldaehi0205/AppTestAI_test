@@ -4,6 +4,7 @@ import styled from "styled-components";
 function SpliterLeft(props) {
   return (
     <SpliterLeftUi
+      className="aaa"
       onDrag={props.handleRelease}
       onDragEnd={props.dragEnd}
       onDragStart={props.dragStart}
