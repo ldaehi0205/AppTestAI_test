@@ -24,5 +24,4 @@ const SpliterLeftUi = styled.div`
   background: #3c3f41;
   z-index: 2;
   cursor: move;
-  user-select: auto;
 `;

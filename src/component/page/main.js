@@ -10,7 +10,6 @@ import LocatorPanel from "../ui/molecules/locatorPanel";
 function Main() {
   const [selectProject, setSelectProject] = useState(true);
   const [tapNav, setTapNav] = useState([]);
-  const navArray = Array(CREATE_NAV_RIGHTARRAY.length - 1).fill(false);
 
   const handleProject = () => {
     setSelectProject(!selectProject);
@@ -23,7 +22,7 @@ function Main() {
   };
 
   useEffect(() => {
-    setTapNav([true, ...navArray]);
+    setTapNav([true, false]);
   }, []);
   return (
     <MainPage>
