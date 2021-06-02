@@ -41,9 +41,6 @@ const LocatorPanel = () => {
 
   const dragStart = e => {
     console.log("start", locator.current.style.width);
-    // setTimeout(function () {
-    // locator.current.style.display = "none";
-    // }, 0);
     console.log(
       document.body.offsetWidth,
       e.clientX,
