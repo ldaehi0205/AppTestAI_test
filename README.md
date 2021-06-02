@@ -18,7 +18,7 @@ React, Hook, styled-Component
 
 - atom을 조합한 컴포넌트입니다.
 
-**src/public/index.js/**
+**src/component/page/main.js/**
 
 - 메인페이지로 화면에 보여지는 레이아웃입니다.
 
