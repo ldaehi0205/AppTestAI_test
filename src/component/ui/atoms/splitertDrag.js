@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function SpliterLeft(props) {
+function SpliterDrag(props) {
   return (
     <SpliterLeftUi
       className="aaa"
@@ -13,7 +13,7 @@ function SpliterLeft(props) {
   );
 }
 
-export default SpliterLeft;
+export default SpliterDrag;
 
 const SpliterLeftUi = styled.div`
   position: absolute;

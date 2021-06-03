@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import Panel from "../atoms/panel";
 import Toolbar from "../atoms/toolbar";
-import SpliterLeft from "../atoms/spliterLeft";
+import SplitertDrag from "../atoms/splitertDrag";
 
 const DevicePanel = () => {
   return (
     <Device>
-      <SpliterLeft />
+      <SplitertDrag />
       <Toolbar />
       <Panel title="Device Panel" />
     </Device>

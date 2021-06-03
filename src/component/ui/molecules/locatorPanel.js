@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import Panel from "../atoms/panel";
 import Toolbar from "../atoms/toolbar";
-import SpliterLeft from "../atoms/spliterLeft";
+import SplitertDrag from "../atoms/splitertDrag";
 
 const LocatorPanel = () => {
   let locator = useRef();
@@ -48,7 +48,7 @@ const LocatorPanel = () => {
 
   return (
     <Locator ref={locator} style={{ width: "40vw" }}>
-      <SpliterLeft
+      <SplitertDrag
         handleRelease={handleRelease}
         dragEnd={dragEnd}
         dragStart={dragStart}
