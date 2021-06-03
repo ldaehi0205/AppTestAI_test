@@ -11,7 +11,6 @@ const LocatorPanel = () => {
 
   const handleRelease = e => {
     e.preventDefault();
-    console.log(e.clientX);
     if (e.clientX !== 0) {
       locator.current.style.width = `${
         (document.body.offsetWidth -
