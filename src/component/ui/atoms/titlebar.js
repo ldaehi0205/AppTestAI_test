@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import appTestIcon from "./appTestIcon.png";
 
 const titlebar = () => {
+  const appTestIcon = "/data/appTestIcon.png";
+
   return (
     <Header>
       <img src={appTestIcon} alt="appTestAIIcon" />

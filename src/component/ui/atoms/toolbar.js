@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import Minimize from "./minimize.png";
-import Shape from "./Shape.png";
 
 const toolbar = props => {
+  const Minimize = "/data/Minimize.png";
+  const Shape = "/data/Shape.png";
+
   return (
     <Toolbar>
       <img src={Shape} alt="Shape" />

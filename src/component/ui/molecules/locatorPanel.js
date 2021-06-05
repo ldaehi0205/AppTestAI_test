@@ -7,7 +7,7 @@ import SplitertDrag from "../atoms/splitertDrag";
 const LocatorPanel = () => {
   const locator = useRef();
   const img = new Image();
-  img.src = "bg.png";
+  img.src = null;
 
   const handleRelease = e => {
     if (e.clientX !== 0) {
