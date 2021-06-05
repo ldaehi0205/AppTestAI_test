@@ -7,7 +7,7 @@ import EmptyPanel from "../ui/atoms/emptyPanel";
 import DevicePanel from "../ui/molecules/devicePanel";
 import LocatorPanel from "../ui/molecules/locatorPanel";
 
-function Main() {
+const Main = () => {
   const [selectProject, setSelectProject] = useState(true);
   const [tapNav, setTapNav] = useState([]);
 
@@ -49,7 +49,7 @@ function Main() {
       </main>
     </MainPage>
   );
-}
+};
 
 export default Main;
 const MainPage = styled.div`

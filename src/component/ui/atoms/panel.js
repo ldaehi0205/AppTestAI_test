@@ -9,9 +9,9 @@ export default panel;
 
 const Panel = styled.div`
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 100%;
   height: 97%;
   background: #2b2b2b;

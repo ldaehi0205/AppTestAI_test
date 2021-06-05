@@ -5,12 +5,11 @@ import Toolbar from "../atoms/toolbar";
 import SplitertDrag from "../atoms/splitertDrag";
 
 const LocatorPanel = () => {
-  let locator = useRef();
-  var img = new Image();
+  const locator = useRef();
+  const img = new Image();
   img.src = "bg.png";
 
   const handleRelease = e => {
-    e.preventDefault();
     if (e.clientX !== 0) {
       locator.current.style.width = `${
         (document.body.offsetWidth -
@@ -26,8 +25,6 @@ const LocatorPanel = () => {
   };
 
   const dragEnd = e => {
-    e.preventDefault();
-    console.log("end");
     locator.current.style.width = `${
       (document.body.offsetWidth -
         e.clientX +

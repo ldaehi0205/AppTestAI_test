@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Minimize from "./minimize.png";
 import Shape from "./Shape.png";
 
-function toolbar(props) {
+const toolbar = props => {
   return (
     <Toolbar>
       <img src={Shape} alt="Shape" />
@@ -14,7 +14,7 @@ function toolbar(props) {
       />
     </Toolbar>
   );
-}
+};
 
 export default toolbar;
 

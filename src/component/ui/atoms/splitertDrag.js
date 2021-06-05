@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function SpliterDrag(props) {
+const SpliterDrag = props => {
   return (
     <SpliterLeftUi
       onDrag={props.handleRelease}
@@ -10,7 +10,7 @@ function SpliterDrag(props) {
       draggable="true"
     ></SpliterLeftUi>
   );
-}
+};
 
 export default SpliterDrag;
 
