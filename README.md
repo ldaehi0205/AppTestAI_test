@@ -27,6 +27,9 @@ React, Hook, styled-Component
 ├── package.json
 ├── public
 │   ├── data
+│   │   ├── Shape.png
+│   │   ├── appTestIcon.png
+│   │   └── minimize.png
 │   └── index.html
 ├── src
 │   ├── component
@@ -34,23 +37,20 @@ React, Hook, styled-Component
 │   │   │   └── main.js
 │   │   ├── templates
 │   │   └── ui
-│   │   ├── atoms
-│   │   │   ├── Shape.png
-│   │   │   ├── appTestIcon.png
-│   │   │   ├── emptyPanel.js
-│   │   │   ├── minimize.png
-│   │   │   ├── panel.js
-│   │   │   ├── projectSelected.js
-│   │   │   ├── rightSelected.js
-│   │   │   ├── spliter.js
-│   │   │   ├── spliterLeft.js
-│   │   │   ├── titlebar.js
-│   │   │   └── toolbar.js
-│   │   └── molecules
-│   │       ├── aside.js
-│   │       ├── devicePanel.js
-│   │       ├── locatorPanel.js
-│   │       └── project.js
+│   │       ├── atoms
+│   │       │   ├── emptyPanel.js
+│   │       │   ├── panel.js
+│   │       │   ├── projectSelected.js
+│   │       │   ├── rightSelected.js
+│   │       │   ├── spliter.js
+│   │       │   ├── splitertDrag.js
+│   │       │   ├── titlebar.js
+│   │       │   └── toolbar.js
+│   │       └── molecules
+│   │           ├── aside.js
+│   │           ├── devicePanel.js
+│   │           ├── locatorPanel.js
+│   │           └── project.js
 │   └── index.js
 └── yarn.lock
 ```
