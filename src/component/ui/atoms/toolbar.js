@@ -1,25 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 
-const toolbar = props => {
+const Toolbar = props => {
   const Minimize = "/data/Minimize.png";
   const Shape = "/data/Shape.png";
 
   return (
-    <Toolbar>
+    <ToolbarUI>
       <img src={Shape} alt="Shape" />
       <img
         src={Minimize}
         alt="Minimize"
         onClick={() => props.handleProject()}
       />
-    </Toolbar>
+    </ToolbarUI>
   );
 };
 
-export default toolbar;
+export default Toolbar;
 
-const Toolbar = styled.div`
+const ToolbarUI = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;

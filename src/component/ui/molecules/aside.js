@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectSelected from "../atoms/projectSelected";
-import RightSelected from "../atoms/rightSelected";
+import ProjectSelected from "../atoms/ProjectSelected";
+import RightSelected from "../atoms/RightSelected";
 
-const Slider = props => {
+const Aside = props => {
   return (
-    <Aside>
+    <AsideBar>
       {props.asideName === "right" &&
         props.CREATE_NAV_RIGHTARRAY.map(e => {
           return (
@@ -31,13 +31,13 @@ const Slider = props => {
             />
           );
         })}
-    </Aside>
+    </AsideBar>
   );
 };
 
-export default Slider;
+export default Aside;
 
-const Aside = styled.aside`
+const AsideBar = styled.aside`
   position: relative;
   display: flex;
   flex-direction: column;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import Aside from "../ui/molecules/aside";
-import Titlebar from "../ui/atoms/titlebar";
-import Project from "../ui/molecules/project";
-import EmptyPanel from "../ui/atoms/emptyPanel";
-import DevicePanel from "../ui/molecules/devicePanel";
-import LocatorPanel from "../ui/molecules/locatorPanel";
+import Aside from "../ui/molecules/Aside";
+import Titlebar from "../ui/atoms/Titlebar";
+import ProjectPanel from "../ui/molecules/ProjectPanel";
+import EmptyPanel from "../ui/atoms/EmptyPanel";
+import DevicePanel from "../ui/molecules/DevicePanel";
+import LocatorPanel from "../ui/molecules/LocatorPanel";
 
 const Main = () => {
   const [selectProject, setSelectProject] = useState(true);
@@ -35,7 +35,7 @@ const Main = () => {
           asideName="left"
           rotateText="-90"
         />
-        {selectProject && <Project handleProject={handleProject} />}
+        {selectProject && <ProjectPanel handleProject={handleProject} />}
         <EmptyPanel />
         {tapNav[0] && <DevicePanel tapNav={tapNav[0]} />}
         {tapNav[1] && <LocatorPanel tapNav={tapNav[1]} />}

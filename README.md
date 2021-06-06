@@ -34,23 +34,23 @@ React, Hook, styled-Component
 ├── src
 │   ├── component
 │   │   ├── page
-│   │   │   └── main.js
+│   │   │   └── Main.js
 │   │   ├── templates
 │   │   └── ui
 │   │       ├── atoms
-│   │       │   ├── emptyPanel.js
-│   │       │   ├── panel.js
-│   │       │   ├── projectSelected.js
-│   │       │   ├── rightSelected.js
-│   │       │   ├── spliter.js
-│   │       │   ├── splitertDrag.js
-│   │       │   ├── titlebar.js
-│   │       │   └── toolbar.js
+│   │       │   ├── EmptyPanel.js
+│   │       │   ├── Panel.js
+│   │       │   ├── ProjectSelected.js
+│   │       │   ├── RightSelected.js
+│   │       │   ├── Spliter.js
+│   │       │   ├── SplitertDrag.js
+│   │       │   ├── Titlebar.js
+│   │       │   └── Toolbar.js
 │   │       └── molecules
-│   │           ├── aside.js
-│   │           ├── devicePanel.js
-│   │           ├── locatorPanel.js
-│   │           └── project.js
+│   │           ├── Aside.js
+│   │           ├── DevicePanel.js
+│   │           ├── LocatorPanel.js
+│   │           └── Project.js
 │   └── index.js
 └── yarn.lock
 ```

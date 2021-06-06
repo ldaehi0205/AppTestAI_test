@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const titlebar = () => {
+const Titlebar = () => {
   const appTestIcon = "/data/appTestIcon.png";
 
   return (
@@ -11,7 +11,7 @@ const titlebar = () => {
   );
 };
 
-export default titlebar;
+export default Titlebar;
 
 const Header = styled.header`
   display: block;

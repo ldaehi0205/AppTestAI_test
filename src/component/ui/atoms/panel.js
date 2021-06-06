@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const panel = props => {
-  return <Panel>{props.title}</Panel>;
+const Panel = props => {
+  return <CommonPanel>{props.title}</CommonPanel>;
 };
 
-export default panel;
+export default Panel;
 
-const Panel = styled.div`
+const CommonPanel = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
@@ -17,4 +17,3 @@ const Panel = styled.div`
   background: #2b2b2b;
   color: white;
 `;
-

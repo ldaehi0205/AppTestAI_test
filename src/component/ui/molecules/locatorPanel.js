@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
-import Panel from "../atoms/panel";
-import Toolbar from "../atoms/toolbar";
-import SplitertDrag from "../atoms/splitertDrag";
+import Panel from "../atoms/Panel";
+import Toolbar from "../atoms/Toolbar";
+import SplitertDrag from "../atoms/SplitertDrag";
 
 const LocatorPanel = () => {
   const locator = useRef();

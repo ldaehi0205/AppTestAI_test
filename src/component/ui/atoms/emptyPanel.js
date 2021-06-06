@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const emptyPanel = () => {
-  return <EmptyPanel>Empty Panel</EmptyPanel>;
+const EmptyPanel = () => {
+  return <EmptyPanelUI>Empty Panel</EmptyPanelUI>;
 };
 
-export default emptyPanel;
+export default EmptyPanel;
 
-const EmptyPanel = styled.div`
+const EmptyPanelUI = styled.div`
   display: flex;
   position: relative;
   justify-content: center;

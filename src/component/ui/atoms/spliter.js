@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const spliter = () => {
-  return <Spliter />;
+const Spliter = () => {
+  return <SpliterBar />;
 };
 
-export default spliter;
+export default Spliter;
 
-const Spliter = styled.div`
+const SpliterBar = styled.div`
   display: inline;
   position: absolute;
   right: 0px;

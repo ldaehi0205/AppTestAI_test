@@ -1,21 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 
-const projectSelected = props => {
+const ProjectSelected = props => {
   return (
-    <ProjectSelected
+    <ProjectSelectedUI
       onClick={props.handleProject}
       rotateText={props.rotateText}
       selectProject={props.selectProject}
     >
       <div className="name">{props.asideName}</div>
-    </ProjectSelected>
+    </ProjectSelectedUI>
   );
 };
 
-export default projectSelected;
+export default ProjectSelected;
 
-const ProjectSelected = styled.div`
+const ProjectSelectedUI = styled.div`
   position: relative;
   top: 100px;
   width: 100px;
