@@ -19,7 +19,8 @@ const LocatorPanel = () => {
             locator.current.style.width.split("")[0] +
               locator.current.style.width.split("")[1]
           )) /
-        7.5
+          7.5 -
+        20
       }vw`;
     }
   };
@@ -32,7 +33,8 @@ const LocatorPanel = () => {
           locator.current.style.width.split("")[0] +
             locator.current.style.width.split("")[1]
         )) /
-      7.5
+        7.5 -
+      20
     }vw`;
     locator.current.style.display = "block";
   };
