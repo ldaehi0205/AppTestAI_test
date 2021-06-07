@@ -21,7 +21,7 @@ const ProjectSelectedUI = styled.div`
   height: 25px;
   margin-bottom: 74px;
   color: rgb(255, 255, 255);
-  background: ${props => (props?.selectProject ? "#2b2b2b" : "3c3f41")};
+  background: ${props => (props.selectProject ? "#2b2b2b" : "3c3f41")};
   font-size: 14px;
   transform-origin: left top;
   transform: rotate(-90deg);

@@ -37,8 +37,8 @@ const Main = () => {
         />
         {selectProject && <ProjectPanel handleProject={handleProject} />}
         <EmptyPanel />
-        {tapNav[0] && <DevicePanel tapNav={tapNav[0]} />}
-        {tapNav[1] && <LocatorPanel tapNav={tapNav[1]} />}
+        {tapNav[0] && <DevicePanel />}
+        {tapNav[1] && <LocatorPanel />}
         <Aside
           CREATE_NAV_RIGHTARRAY={CREATE_NAV_RIGHTARRAY}
           tapNav={tapNav}

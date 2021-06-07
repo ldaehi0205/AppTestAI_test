@@ -10,6 +10,7 @@ const LocatorPanel = () => {
   img.src = null;
 
   const handleRelease = e => {
+    console.log(document.body.offsetWidth - e.clientX);
     if (e.clientX !== 0) {
       locator.current.style.width = `${
         (document.body.offsetWidth -
@@ -18,8 +19,7 @@ const LocatorPanel = () => {
             locator.current.style.width.split("")[0] +
               locator.current.style.width.split("")[1]
           )) /
-          7.5 -
-        15
+        7.5
       }vw`;
     }
   };
@@ -32,8 +32,7 @@ const LocatorPanel = () => {
           locator.current.style.width.split("")[0] +
             locator.current.style.width.split("")[1]
         )) /
-        7.5 -
-      15
+      7.5
     }vw`;
     locator.current.style.display = "block";
   };
