@@ -5,7 +5,6 @@ const ProjectSelected = props => {
   return (
     <ProjectSelectedUI
       onClick={props.handleProject}
-      rotateText={props.rotateText}
       selectProject={props.selectProject}
     >
       <div className="name">{props.asideName}</div>

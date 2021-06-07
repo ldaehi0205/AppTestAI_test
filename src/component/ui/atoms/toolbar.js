@@ -11,7 +11,7 @@ const Toolbar = props => {
       <img
         src={Minimize}
         alt="Minimize"
-        onClick={() => props.handleProject()}
+        onClick={() => props.handleProject?.()}
       />
     </ToolbarUI>
   );

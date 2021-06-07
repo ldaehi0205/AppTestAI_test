@@ -8,11 +8,10 @@ const Spliter = () => {
 export default Spliter;
 
 const SpliterBar = styled.div`
-  display: inline;
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 2%;
+  width: 4px;
   height: 100%;
   background: #3c3f41;
 `;

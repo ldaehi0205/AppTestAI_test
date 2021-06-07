@@ -24,6 +24,7 @@ const Main = () => {
   useEffect(() => {
     setTapNav([true, false]);
   }, []);
+
   return (
     <MainPage>
       <Titlebar />
@@ -33,7 +34,6 @@ const Main = () => {
           CREATE_NAV_LEFTARRAY={CREATE_NAV_LEFTARRAY}
           selectProject={selectProject}
           asideName="left"
-          rotateText="-90"
         />
         {selectProject && <ProjectPanel handleProject={handleProject} />}
         <EmptyPanel />
@@ -43,7 +43,6 @@ const Main = () => {
           CREATE_NAV_RIGHTARRAY={CREATE_NAV_RIGHTARRAY}
           tapNav={tapNav}
           asideName="right"
-          rotateText="90"
           handletapNav={handletapNav}
         />
       </main>
@@ -52,6 +51,7 @@ const Main = () => {
 };
 
 export default Main;
+
 const MainPage = styled.div`
   width: 100%;
   height: 100%;

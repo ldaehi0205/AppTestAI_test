@@ -14,7 +14,6 @@ const Aside = props => {
               id={e.id}
               tapNav={props.tapNav[e.id]}
               asideName={e.content}
-              rotateText={props.rotateText}
               handletapNav={props.handletapNav}
             />
           );
@@ -26,7 +25,6 @@ const Aside = props => {
               key={e.id}
               handleProject={props.handleProject}
               asideName={e.content}
-              rotateText={props.rotateText}
               selectProject={props.selectProject}
             />
           );

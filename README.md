@@ -10,6 +10,10 @@ React, Hook, styled-Component
 
 프로젝트 구조는 다음과 같습니다.
 
+**public/data/**
+
+- 프로젝트에 필요한 데이터를 보관하는 폴더입니다.
+
 **src/ui/atoms/**
 
 - 가장 작은 단위의 재사용성이 높은 컴포넌트입니다.

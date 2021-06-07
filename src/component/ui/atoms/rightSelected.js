@@ -4,11 +4,8 @@ import styled from "styled-components";
 const RightSelected = props => {
   return (
     <RightSelectedbar
-      onClick={props.handleProject}
-      rotateText={props.rotateText}
-      selectProject={props.selectProject}
       tapNav={props.tapNav}
-      onClick={() => props.handletapNav?.(props.id)}
+      onClick={() => props.handletapNav(props.id)}
     >
       <div className="name">{props.asideName}</div>
     </RightSelectedbar>
