@@ -54,7 +54,7 @@ React, Hook, styled-Component
 │   │           ├── Aside.js
 │   │           ├── DevicePanel.js
 │   │           ├── LocatorPanel.js
-│   │           └── Project.js
+│   │           └── ProjectPanel.js
 │   └── index.js
 └── yarn.lock
 ```
