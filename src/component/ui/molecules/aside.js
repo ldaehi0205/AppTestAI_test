@@ -6,6 +6,17 @@ import RightSelected from "../atoms/RightSelected";
 const Aside = props => {
   return (
     <AsideBar>
+      {props.asideName === "left" &&
+        props.CREATE_NAV_LEFTARRAY.map(e => {
+          return (
+            <ProjectSelected
+              key={e.id}
+              handleProject={props.handleProject}
+              asideName={e.content}
+              selectProject={props.selectProject}
+            />
+          );
+        })}
       {props.asideName === "right" &&
         props.CREATE_NAV_RIGHTARRAY.map(e => {
           return (
@@ -15,17 +26,6 @@ const Aside = props => {
               tapNav={props.tapNav[e.id]}
               asideName={e.content}
               handletapNav={props.handletapNav}
-            />
-          );
-        })}
-      {props.asideName === "left" &&
-        props.CREATE_NAV_LEFTARRAY.map(e => {
-          return (
-            <ProjectSelected
-              key={e.id}
-              handleProject={props.handleProject}
-              asideName={e.content}
-              selectProject={props.selectProject}
             />
           );
         })}

@@ -10,7 +10,6 @@ const LocatorPanel = () => {
   img.src = null;
 
   const handleRelease = e => {
-    console.log(document.body.offsetWidth - e.clientX);
     if (e.clientX !== 0) {
       locator.current.style.width = `${
         (document.body.offsetWidth -
